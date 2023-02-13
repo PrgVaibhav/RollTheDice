@@ -22,6 +22,7 @@ function randomNumberAndImage() {
   const imageSourceTwo = 'images/' + randomDiceImageTwo;
   image2.setAttribute('src', imageSourceTwo);
 
+  // Generating results
   if (randomNumberOne > randomNumberTwo) {
     header.innerHTML = '🎉 Player 1 Wins 🎉';
   } else if (randomNumberOne < randomNumberTwo) {
