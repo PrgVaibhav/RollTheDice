@@ -10,14 +10,16 @@ const image2 = document.querySelectorAll('img')[1];
 
 const randomNumberOne = Math.floor(Math.random() * 6) + 1;
 const randomDiceImage = 'dice' + randomNumberOne + '.png';
-const imageSource = './images/' + randomDiceImage;
+const imageSource = 'images/' + randomDiceImage;
+
+console.log(imageSource);
 image1.setAttribute('src', imageSource);
 
 // Generating random number for second dice
 
 const randomNumberTwo = Math.floor(Math.random() * 6) + 1;
 const randomDiceImageTwo = 'dice' + randomNumberTwo + '.png';
-const imageSourceTwo = './images/' + randomDiceImageTwo;
+const imageSourceTwo = 'images/' + randomDiceImageTwo;
 image2.setAttribute('src', imageSourceTwo);
 
 // Using button to refresh the page
